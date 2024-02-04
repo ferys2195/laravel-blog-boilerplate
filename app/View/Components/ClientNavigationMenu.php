@@ -21,6 +21,52 @@ class ClientNavigationMenu extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.client-navigation-menu');
+        $menus = [
+            [
+                'uri' => '#',
+                'title' => 'Beranda',
+                'icon'  => '',
+            ],
+            [
+                'uri' => '#',
+                'title' => 'Parent 1',
+                'icon'  => '',
+                'submenu' => [
+                    [
+                        'uri' => '#',
+                        'title' => 'Sub Parent 1',
+                        'icon'  => '',
+                    ],
+                    [
+                        'uri' => '#',
+                        'title' => 'Sub Parent 2',
+                        'icon'  => '',
+                    ],
+                ],
+            ],
+            [
+                'uri' => '#',
+                'title' => 'Parent 2',
+                'icon'  => '',
+                'submenu' => [
+                    [
+                        'uri' => '#',
+                        'title' => 'Sub Parent 1',
+                        'icon'  => '',
+                    ],
+                    [
+                        'uri' => '#',
+                        'title' => 'Sub Parent 2',
+                        'icon'  => '',
+                    ],
+                ],
+            ],
+            [
+                'uri' => '/login',
+                'title' => 'Login',
+                'icon'  => '',
+            ],
+        ];
+        return view('components.client-navigation-menu', compact('menus'));
     }
 }
