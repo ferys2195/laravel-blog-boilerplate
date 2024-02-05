@@ -26,9 +26,11 @@
                             </svg>
                         </label>
                     </div>
-                    <div class="flex-1 px-2 mx-2">Navbar Title</div>
+                    <div class="flex-1 px-2 mx-2">
+                        <x-application-logo class="block h-9 w-auto" />
+                    </div>
                     <div class="flex-none px-2 mx-2 lg:hidden">
-                        <x-theme/>
+                        <x-theme />
                     </div>
                     <div class="flex-none hidden lg:block">
                         <ul class="menu menu-horizontal">
