@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+Route::get('/article', fn () => view('pages.client.article.index'))->name('article');
+
 Route::prefix('admin')->group(function () {
     require __DIR__ . '/admin.php';
 })->middleware(['auth', 'verified']);

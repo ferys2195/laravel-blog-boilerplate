@@ -15,7 +15,7 @@
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
             <!-- Navbar -->
-            <header class="sticky top-0 lg:container lg:mx-auto border-b">
+            <header class="sticky top-0 lg:container lg:w-2/3 lg:mx-auto border-b">
                 <div class="w-full navbar bg-base-100">
                     <div class="flex-none lg:hidden">
                         <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
@@ -33,14 +33,14 @@
                         <x-theme />
                     </div>
                     <div class="flex-none hidden lg:block">
-                        <ul class="menu menu-horizontal">
+                        <ul class="menu menu-horizontal font-medium">
                             <x-client-navigation-menu />
                         </ul>
                     </div>
                 </div>
             </header>
             <!-- Page content here -->
-            <main class="container mx-auto p-5">
+            <main class="container mx-auto p-5 lg:w-2/3">
                 @yield('content')
             </main>
             <footer class="px-10 py-4 border-t bg-base-100 text-base-content border-base-300">
@@ -105,7 +105,7 @@
         </div>
         <div class="drawer-side">
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-            <ul class="menu p-4 w-72 min-h-full bg-base-200">
+            <ul class="menu p-4 w-72 min-h-full bg-base-200 font-medium">
                 <!-- Sidebar content here -->
                 <x-client-navigation-menu />
             </ul>

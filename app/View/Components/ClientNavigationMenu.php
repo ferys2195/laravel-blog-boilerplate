@@ -28,6 +28,11 @@ class ClientNavigationMenu extends Component
                 'icon'  => '',
             ],
             [
+                'uri' => route('article'),
+                'title' => 'Article',
+                'icon'  => '',
+            ],
+            [
                 'uri' => '#',
                 'title' => 'Parent 1',
                 'icon'  => '',
